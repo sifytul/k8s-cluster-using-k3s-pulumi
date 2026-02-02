@@ -9,6 +9,7 @@
   apt:
     name: 
       - curl
+      - vim
       - wget
       - apt-transport-https
       - ca-certificates
