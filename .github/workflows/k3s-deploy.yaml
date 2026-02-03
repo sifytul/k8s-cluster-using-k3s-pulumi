@@ -76,5 +76,5 @@ jobs:
       - name: Run the Ansible playbook
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@${{ env.GIT_RUNNER_IP }} << 'EOF'
-          cd ansible && ansible-playbook -i inventory/hosts.ini site.yml
+          cd ansible && ansible-playbook -i inventory/hosts.ini site.yaml
           EOF
