@@ -1,13 +1,13 @@
 ---
-- name: Update and upgrade apt packages
+- name: Update apt cache
   apt:
     update_cache: yes
-    upgrade: dist
     force_apt_get: yes
+    cache_valid_time: 3600
 
 - name: Install dependencies
   apt:
-    name: 
+    name:
       - curl
       - vim
       - htop
